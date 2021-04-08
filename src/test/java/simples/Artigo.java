@@ -36,7 +36,7 @@ public class Artigo {
     driver.findElement(By.cssSelector("button.wvui-button")).click();
 
     // validar titulo da pagina- se nao tive linha abixo nao é script de teste
-        assertEquals("Ovo de Páscoa - Wikipedia, a enciclopédia livre", driver.getTitle());
+        assertEquals("Ovo de Páscoa ? Wikipédia, a enciclopédia livre", driver.getTitle());
         assertTrue(driver.getTitle().contains("Ovo de Páscoa"));
 
     }
