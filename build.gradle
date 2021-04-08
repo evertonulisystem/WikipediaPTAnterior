@@ -26,9 +26,9 @@ test {
     useJUnit()
 }
 
-task regressionTests(type: Test) {
-    include '**/Runner*'
-}
+//task regressionTests(type: Test) {
+//    include '**/Runner*'
+//}
 
 task smokeTest(type: Test) {
 include '**/Runner*'
