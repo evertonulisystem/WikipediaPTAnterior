@@ -24,9 +24,7 @@ public class Artigo {
        driver = new ChromeDriver();
        driver.manage().window().maximize();
        driver.manage().timeouts().implicitlyWait(80000, TimeUnit.MILLISECONDS);
-
 }
-
     @Test
     public void consultarArtigo(){
     //abrir site
@@ -34,7 +32,8 @@ public class Artigo {
 
     //pesquisar ovo de pascoa
     driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa");
-    driver.findElement(By.id("searchButton")).click();
+   //driver.findElement(By.id("searchButton")).click();
+    driver.findElement(By.cssSelector("button.wvui-button")).click();
 
     // validar titulo da pagina- se nao tive linha abixo nao é script de teste
         assertEquals("Ovo de Páscoa - Wikipedia, a enciclopédia livre", driver.getTitle());
